@@ -19,3 +19,11 @@ console.log(document.getElementsByClassName("subtitulo")[0]); // Busca somente a
 
 console.log(document.getElementsByTagName("button"));
 console.log(document.getElementsByTagName("button")[0].innerHTML);
+
+/*---------------------------------*\
+	   Aula 6 - querySelector
+\*---------------------------------*/
+
+// No caso de classes e tags, o querySlector não faz o ARRAY. Ele acessa só o primeiro elemento.
+console.log(document.querySelector("#time-grande"));
+console.log(document.querySelector(".subtitulo"));
