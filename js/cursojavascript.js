@@ -37,3 +37,19 @@ console.log(document.querySelectorAll(".filho"));
 
 // Acessa somente as classes "filho" que são submissas à div de id "pai".
 console.log(document.getElementById("pai").querySelectorAll(".filho"));
+
+/*---------------------------------*\
+	  Aula 8 - createElement
+\*---------------------------------*/
+
+// Criando uma DIV no console
+console.log(document.createElement("div"));
+
+
+var img = document.createElement("img");
+img.src="http://lorempixel.com/400/200/";
+
+var p = document.createElement("p");
+p.innerHTML = "Olá, estou no console."
+
+console.log(img, p);
