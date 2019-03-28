@@ -71,3 +71,10 @@ carro3.innerHTML = "Sentra";
 document.getElementById("nissan").appendChild(carro1);
 document.getElementById("nissan").appendChild(carro2);
 document.getElementById("nissan").appendChild(carro3);
+
+/*---------------------------------*\
+	   Aula 10 - removeChild
+\*---------------------------------*/
+
+// Remove um item do elemento filho
+document.getElementById("nissan").removeChild(carro3);
