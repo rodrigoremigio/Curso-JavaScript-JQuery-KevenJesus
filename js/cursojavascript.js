@@ -53,3 +53,21 @@ var p = document.createElement("p");
 p.innerHTML = "Olá, estou no console."
 
 console.log(img, p);
+
+/*---------------------------------*\
+	  Aula 9 - appendChild
+\*---------------------------------*/
+
+//Criando uma variável para inserir  um parágrafo dentro da página.
+var carro1 = document.createElement("p");
+carro1.innerHTML = "Skyline";
+
+var carro2 = document.createElement("p");
+carro2.innerHTML = "350Z";
+
+var carro3 = document.createElement("p");
+carro3.innerHTML = "Sentra";
+
+document.getElementById("nissan").appendChild(carro1);
+document.getElementById("nissan").appendChild(carro2);
+document.getElementById("nissan").appendChild(carro3);
