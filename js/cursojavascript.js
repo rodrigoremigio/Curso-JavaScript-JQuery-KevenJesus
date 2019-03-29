@@ -86,3 +86,25 @@ document.getElementById("nissan").removeChild(carro3);
 // parentNode acessa o elemento "pai" a partir de um elemento filho
 console.log(document.querySelector(".neto").parentNode);
 console.log(document.querySelector(".neto").parentNode.parentNode);
+
+/*---------------------------------*\
+	    Aula 13 - Variáveis
+\*---------------------------------*/
+
+var nome = "Rodrigo"; // Escopo global
+
+function teste() {
+	nome = "Cris"; // Escopo local
+}
+
+teste();
+console.log(nome);
+
+function testeDois() {
+	let name = "Jesus"; // Let especifica que a variável é só local.
+}
+
+// "Const" cria uma variável que não pode ser alterada.
+const nomeConst = "Rodrigo";
+nomeConst = "Remígio";
+console.log(nomeConst);
