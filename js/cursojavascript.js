@@ -106,5 +106,22 @@ function testeDois() {
 
 // "Const" cria uma variável que não pode ser alterada.
 const nomeConst = "Rodrigo";
-nomeConst = "Remígio";
+// nomeConst = "Remígio";
 console.log(nomeConst);
+
+/*---------------------------------*\
+	     Aula 14 - Objetos
+\*---------------------------------*/
+
+var car = {
+	placa: "ABC-1234",
+	modelo: "Sedã",
+	marca: "Hyundai",
+	opcionais: {
+		cambio: "Automático",
+		conbustivel: "Flex"
+	}
+};
+
+console.log(car);
+console.log(car.marca);
