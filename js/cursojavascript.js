@@ -125,3 +125,11 @@ var car = {
 
 console.log(car);
 console.log(car.marca);
+
+/*---------------------------------*\
+	      Aula 15 - Arrays
+\*---------------------------------*/
+
+var arrayOne = ['Rodrigo', 28, 'casado', {time: 'Flamengo'}];
+console.log(arrayOne); // Acessa todo o array
+console.log(arrayOne[0]); // Acessa por índice
