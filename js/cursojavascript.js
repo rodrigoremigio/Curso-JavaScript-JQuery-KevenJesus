@@ -78,3 +78,11 @@ document.getElementById("nissan").appendChild(carro3);
 
 // Remove um item do elemento filho
 document.getElementById("nissan").removeChild(carro3);
+
+/*---------------------------------*\
+	    Aula 11 - parentNode
+\*---------------------------------*/
+
+// parentNode acessa o elemento "pai" a partir de um elemento filho
+console.log(document.querySelector(".neto").parentNode);
+console.log(document.querySelector(".neto").parentNode.parentNode);
