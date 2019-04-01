@@ -133,3 +133,46 @@ console.log(car.marca);
 var arrayOne = ['Rodrigo', 28, 'casado', {time: 'Flamengo'}];
 console.log(arrayOne); // Acessa todo o array
 console.log(arrayOne[0]); // Acessa por índice
+
+/*---------------------------------*\
+       Aula 17 - Condicionais
+\*---------------------------------*/
+
+var filho = "Bart";
+var pai = "Hommer";
+
+if("Bart" == filho) {
+	console.log("Sim, é filho.");
+} else {
+	console.log("Não é filho.");
+}
+
+if("Hommer" == filho) {
+	console.log("Sim, é filho.");
+} else if("Hommer" == pai) {
+	console.log("Sim, é pai.");
+}
+
+switch(pai) {
+	case "Bart":
+		console.log("Bart é o pai.");
+	break;
+
+	case "Hommer":
+		console.log("Hommer é o pai.");
+	break;
+}
+
+switch(filho) {
+	case "Lisa":
+		console.log("Lisa é a filha.");
+	break;
+
+	case "George":
+		console.log("George é o filho.");
+	break;
+
+	default:
+		console.log("Nenhum é o filho.");
+	break;
+}
