@@ -176,3 +176,51 @@ switch(filho) {
 		console.log("Nenhum é o filho.");
 	break;
 }
+
+/*---------------------------------*\
+ Aula 18 - For, forEach, Map e While
+\*---------------------------------*/
+
+var js = document.getElementsByClassName('js');
+
+// FOR
+
+for (let i = 0; i < js.length; i++) {
+	let texto = js[i].innerHTML;
+	console.log(texto);
+	js[i].innerHTML = 'Curso ' + texto + ' JS.';
+}
+
+// FOREACH só percorre tipo array
+
+var array = ['Paul', 'John', 'Ringo', 'George'];
+
+array.forEach(function(elemento, indice) {
+	if(elemento === 'John') {
+		array[indice] = 'Yoko Ono'
+	}
+});
+
+console.log(array);
+
+// MAP também só percorre array, mas ele retorna um novo elemento
+
+var newarray = [100, 101, 102, 103];
+
+var novo = newarray.map(function(element, index) {
+	if(element === 102) {
+		element = 'Cento e dois';
+	}
+
+	return element;
+});
+
+console.log(novo);
+
+// WHILE
+
+var iii = 0;
+while(iii < 5) {
+	console.log('Oi')
+	iii++;
+}
