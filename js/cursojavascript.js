@@ -243,3 +243,12 @@ var person = {
 function newperson(newobjectperson) {
 	person = newobjectperson;
 }
+
+/*---------------------------------*\
+     Aula 19 - Eventos / Onload
+\*---------------------------------*/
+
+// ONLOAD inicia quando a página é completamente carregada
+window.onload = function() {
+	alert("Página carregada")
+}
