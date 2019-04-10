@@ -245,10 +245,30 @@ function newperson(newobjectperson) {
 }
 
 /*---------------------------------*\
-     Aula 19 - Eventos / Onload
+     Aula 20 - Eventos / Onload
 \*---------------------------------*/
 
 // ONLOAD inicia quando a página é completamente carregada
 window.onload = function() {
 	alert("Página carregada")
 }
+
+/*---------------------------------*\
+     Aula 21 - Eventos / Click
+\*---------------------------------*/
+
+var botao = document.getElementById("btn");
+var titleh3 = document.getElementById("titleh3");
+
+// Criando um evento
+botao.addEventListener("click", function(){
+	titleh3.remove();
+})
+
+/*
+SINTAXE
+
+elemento.adicionarEvento("nome do evento", função que executa pós evento(){
+	
+})
+*/
