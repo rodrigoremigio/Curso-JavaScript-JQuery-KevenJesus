@@ -224,3 +224,22 @@ while(iii < 5) {
 	console.log('Oi')
 	iii++;
 }
+
+/*---------------------------------*\
+          Aula 19 - Funções
+\*---------------------------------*/
+
+function calcularmedia(nota1, nota2, nota3) {
+	return (nota1 + nota2 + nota3) / 3;
+}
+
+var person = {
+	nome: "Rodrigo",
+	idade: 24,
+	profissao: "designer",
+	cidade: "Lisboa"
+};
+
+function newperson(newobjectperson) {
+	person = newobjectperson;
+}
