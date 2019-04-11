@@ -38,3 +38,14 @@ linguagens.addEventListener("change", function(){
 	var itemAtual = this.selectedIndex;
 	console.log(options[itemAtual].text);
 })
+
+/*---------------------------------*\
+      Aula 24 - Eventos / Bur
+\*---------------------------------*/
+
+var nome1 = document.getElementById("nome");
+var sobrenome1 = document.getElementById("sobrenome");
+
+nome1.addEventListener("blur", function(){
+	sobrenome1.value = this.value;
+})
