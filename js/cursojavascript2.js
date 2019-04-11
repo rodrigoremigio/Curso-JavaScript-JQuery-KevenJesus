@@ -49,3 +49,20 @@ var sobrenome1 = document.getElementById("sobrenome");
 nome1.addEventListener("blur", function(){
 	sobrenome1.value = this.value;
 })
+
+/*---------------------------------*\
+      Aula 25 - Eventos / Keyup
+\*---------------------------------*/
+
+var text = document.getElementById("search");
+var result = document.getElementById("result");
+var resultDefaultText = "Nenhum resultado";
+
+text.addEventListener("keyup", function(){
+	var valor = this.value;
+
+	if(valor !== "")
+		result.innerText = this.value;
+	else
+		result.innerText = resultDefaultText;
+})
