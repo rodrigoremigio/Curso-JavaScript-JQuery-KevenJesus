@@ -66,3 +66,17 @@ text.addEventListener("keyup", function(){
 	else
 		result.innerText = resultDefaultText;
 })
+
+/*---------------------------------*\
+    Aula 26 - Eventos / Keypress
+\*---------------------------------*/
+
+var texto = document.getElementById("texto");
+var resultado = document.getElementById("resultado");
+
+texto.addEventListener("keypress",function(evento){
+	if(evento.keyCode == 13) {
+		resultado.style.display = "block";
+	}
+})
+
