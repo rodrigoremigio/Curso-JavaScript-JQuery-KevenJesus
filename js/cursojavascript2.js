@@ -26,3 +26,15 @@ for (var i = 0; i < trs.length; i++) {
 		this.classList.remove("tractive");
 	})
 }
+
+/*---------------------------------*\
+     Aula 23 - Eventos / Change
+\*---------------------------------*/
+
+var linguagens = document.getElementById("languages");
+
+linguagens.addEventListener("change", function(){
+	var options = this.options;
+	var itemAtual = this.selectedIndex;
+	console.log(options[itemAtual].text);
+})
